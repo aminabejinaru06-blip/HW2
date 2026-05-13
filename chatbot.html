@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chatbot - Amina</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        #chat-window {
+            border: 2px solid #6221c5;
+            height: 300px;
+            overflow-y: auto;
+            padding: 15px;
+            margin-bottom: 15px;
+            background: #f9f9f9;
+        }
+        .bot-msg { color: #6221c5; font-weight: bold; margin: 5px 0; }
+        .user-msg { color: #333; margin: 5px 0; text-align: right; }
+    </style>
+</head>
+<body>
+    <header><h1>Amina's Assistant</h1></header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="cv.html">CV & Experience</a></li>
+            <li><a href="data.html">Projects Data</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="overview.html">Overview</a></li>
+            <li><a href="card.html">Card</a></li>
+            <li><a href="chatbot.html">Chatbot</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div id="chat-window">
+            <p class="bot-msg">Bot: Hello! Ask me about 'skills', 'projects', or 'contact'.</p>
+        </div>
+        <form id="chat-form">
+            <input type="text" id="user-input" placeholder="Type here..." required>
+            <button type="submit">Send</button>
+        </form>
+    </main>
+    <script src="chatbot.js"></script>
+</body>
+</html>

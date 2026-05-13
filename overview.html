@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overview - Amina Riana Bejinaru</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .special-text { color: #4a1896; font-style: italic; }
+
+        /* Structura GRID */
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        /* Stil Carduri cu FLEXBOX */
+        .project-card {
+            border: 1px solid #ddd;
+            padding: 20px;
+            border-radius: 8px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            transition: transform 0.3s;
+        }
+
+        .project-card:hover { transform: translateY(-5px); }
+
+        /* Cardul diferit */
+        .featured {
+            background-color: #6221c5;
+            color: white;
+            border: none;
+        }
+        .featured h3 { color: white; border-bottom-color: rgba(255,255,255,0.3); }
+
+        /* Media Query pentru ecrane mici */
+        @media (max-width: 600px) {
+            header h1 { font-size: 1.5rem; }
+            .projects-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <header><h1>Projects Overview</h1></header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="cv.html">CV & Experience</a></li>
+            <li><a href="data.html">Projects Data</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="overview.html">Overview</a></li>
+            <li><a href="card.html">Card</a></li>
+            <li><a href="chatbot.html">Chatbot</a></li>
+        </ul>
+    </nav>
+    <main id="main-content">
+        <section>
+            <h2>My Portfolio Highlights</h2>
+            <p class="special-text">A visual summary of my recent technical work.</p>
+            
+            <div class="projects-grid">
+                <article class="project-card">
+                    <h3>SkillSwap App</h3>
+                    <p>Facilitating knowledge exchange among students.</p>
+                    <strong>Status: Completed</strong>
+                </article>
+                <article class="project-card featured">
+                    <h3>Weather Dash</h3>
+                    <p>Real-time API integration for weather forecasting.</p>
+                    <strong>Status: In Progress (Featured)</strong>
+                </article>
+                <article class="project-card">
+                    <h3>Study Tracker</h3>
+                    <p>Python tool for managing academic deadlines.</p>
+                    <strong>Status: Planning</strong>
+                </article>
+                <article class="project-card">
+                    <h3>Personal Web</h3>
+                    <p>This exact portfolio built with HTML5/CSS3.</p>
+                    <strong>Status: Live</strong>
+                </article>
+            </div>
+        </section>
+    </main>
+    <footer><p>&copy; 2026 Amina Riana Bejinaru</p></footer>
+</body>
+</html>
